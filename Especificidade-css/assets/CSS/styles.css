@@ -1,0 +1,11 @@
+#p{
+    background: red;
+}
+
+#p.p{
+    background: yellow;
+}
+
+p#p.p{
+    background: blueviolet;
+}

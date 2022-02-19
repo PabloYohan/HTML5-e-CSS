@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.menu{
+    position: fixed;
+    width: 100%;
+    background-color: darkred;
+}
+
+.menu ul {
+    list-style: none;
+    text-decoration: none;
+    max-width: 1200px;
+    display: block;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+.menu ul li{
+    float: left;
+}
+
+.menu ul li a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.menu ul li a:hover{
+    background: rgba(0,0,0,0.3);
+    
+}
+
+.grid{
+    max-width: 1200px;
+    padding: 15px;
+    margin: 0 auto;
+    padding-top: 53px;
+}
+.grid::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.grid .col{
+    height: 300px;
+    float: left;
+    padding: 15px;
+}
+
+.grid .col-content{
+    width: 100%;
+    height: 100%;
+    background: rgb(128, 128, 255);
+    box-shadow: 10px 10px 10px 0px blue;
+}
+
+@media all{
+    .grid .col{
+        width: 100%;
+    }
+}
+
+@media all and (min-width: 569px) and (max-width:768px){
+    .grid .col{
+        width: 50%;
+    }
+}
+
+@media all and (min-width: 769px) and (max-width:1199px){
+    .grid .col{
+        width: 33.33%;
+    }
+}
+
+@media all and (min-width: 1200px){
+    .grid .col{
+        width: 25%;
+    }
+}
+
+.fim{
+    max-width: 100%;
+    padding: 0 30px;
+    margin: 0 auto;
+    padding-top: 53px;
+    height: 100vh;
+    background-color: blueviolet;
+}
+
+.conteudo-fim{
+    max-width: 1200px;
+    padding: 0 30px;
+    margin: 0 auto;
+}

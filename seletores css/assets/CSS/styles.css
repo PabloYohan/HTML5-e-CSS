@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    color: red;
+}
+
+.heading:hover{
+    background-color: purple;
+}
+
+.heading{
+    transition: all 1s ease-in-out;
+}
+
+input:not(:checked)+section{
+    background-color: aquamarine;
+}
